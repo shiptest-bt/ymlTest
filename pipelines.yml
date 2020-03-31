@@ -4,6 +4,10 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: art
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: artifactory
 pipelines: 
   - name: columnBug
     steps:

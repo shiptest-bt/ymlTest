@@ -8,6 +8,8 @@ resources:
     type: BuildInfo
     configuration:
       sourceArtifactory: artifactory
+      buildName: "1"
+      buildNumber: 1
 pipelines: 
   - name: columnBug
     steps:

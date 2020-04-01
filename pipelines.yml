@@ -113,7 +113,7 @@ pipelines:
         execution:
           onExecute:
             - echo 'done'
-  - name: state_test
+  - name: state_test_git
     steps:
       - name: testReport_u18
         type: Bash

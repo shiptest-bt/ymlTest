@@ -17,7 +17,7 @@ resources:
       sourceRepository: asd/asd
       imageName: someImageName
       imageTag: someImageTag
-      autoPull: falseresources:
+      autoPull: false
   - name: releaseBundle
     type: releaseBundle
     configuration:

@@ -1,5 +1,5 @@
 resources:
-  - name: gitResource
+  - name: git
     type: GitRepo
     configuration:
       gitProvider: gitResource
@@ -17,7 +17,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
             - name: art
         execution:
           onExecute:
@@ -26,7 +26,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step1
         execution:
@@ -36,7 +36,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step2
         execution:
@@ -46,7 +46,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step3
         execution:
@@ -56,7 +56,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step4
         execution:
@@ -66,7 +66,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step5
         execution:
@@ -76,7 +76,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step6
         execution:
@@ -86,7 +86,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step7
         execution:
@@ -96,7 +96,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step3
             - name: jfrog_xray_java_client
@@ -107,7 +107,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
           inputSteps:
             - name: step1
         execution:
@@ -119,10 +119,10 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitResource
+            - name: git
         execution:
           onExecute:
-            - pushd $res_gitResource_resourcePath
+            - pushd $res_git_resourcePath
             - sudo chmod +x echoTest.sh
             - ./echoTest.sh
       

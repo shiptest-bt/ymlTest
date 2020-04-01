@@ -10,6 +10,14 @@ resources:
       sourceArtifactory: artifactory
       buildName: "1"
       buildNumber: 1
+  - name: docker
+     type: Image
+     configuration:
+       registry: docker
+       sourceRepository: asd/asd
+       imageName: someImageName
+       imageTag: someImageTag
+       autoPull: false
 pipelines: 
   - name: state_test_git
     steps:
@@ -19,6 +27,7 @@ pipelines:
           inputResources:
             - name: git
             - name: art
+            - name: docker
         execution:
           onExecute:
             - pushd $res_git_resourcePath

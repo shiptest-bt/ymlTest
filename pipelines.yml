@@ -27,7 +27,7 @@ resources:
   - name: HelmChart
     type: HelmChart
     configuration:
-      sourceArtifactory: art
+      sourceArtifactory: artifactory
       repository: helmrepo
       chart: helmchart
       version: helmversion

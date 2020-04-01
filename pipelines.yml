@@ -24,6 +24,13 @@ resources:
       sourceDistribution: releaseBundle
       name: bundleName
       version: bundleVersion
+  - name: HelmChart
+    type: HelmChart
+    configuration:
+      sourceArtifactory: art
+      repository: helmrepo
+      chart: helmchart
+      version: helmversion
 pipelines: 
   - name: state_test_git
     steps:
@@ -34,6 +41,8 @@ pipelines:
             - name: git
             - name: art
             - name: docker
+            - name: releaseBundle
+            - name: HelmChart
         execution:
           onExecute:
             - pushd $res_git_resourcePath

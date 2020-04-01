@@ -17,7 +17,13 @@ resources:
       sourceRepository: asd/asd
       imageName: someImageName
       imageTag: someImageTag
-      autoPull: false
+      autoPull: falseresources:
+  - name: releaseBundle
+    type: releaseBundle
+    configuration:
+      sourceDistribution: releaseBundle
+      name: bundleName
+      version: bundleVersion
 pipelines: 
   - name: state_test_git
     steps:

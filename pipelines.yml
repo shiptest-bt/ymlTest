@@ -11,13 +11,13 @@ resources:
       buildName: "1"
       buildNumber: 1
   - name: docker
-     type: Image
-     configuration:
-       registry: docker
-       sourceRepository: asd/asd
-       imageName: someImageName
-       imageTag: someImageTag
-       autoPull: false
+    type: Image
+    configuration:
+      registry: docker
+      sourceRepository: asd/asd
+      imageName: someImageName
+      imageTag: someImageTag
+      autoPull: false
 pipelines: 
   - name: state_test_git
     steps:

@@ -4,33 +4,33 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
-  - name: art
-    type: BuildInfo
-    configuration:
-      sourceArtifactory: artifactory
-      buildName: "1"
-      buildNumber: 1
-  - name: docker
-    type: Image
-    configuration:
-      registry: docker
-      sourceRepository: asd/asd
-      imageName: someImageName
-      imageTag: someImageTag
-      autoPull: false
-  - name: releaseBundle
-    type: releaseBundle
-    configuration:
-      sourceDistribution: releaseBundle
-      name: bundleName
-      version: bundleVersion
-  - name: HelmChart
-    type: HelmChart
-    configuration:
-      sourceArtifactory: artifactory
-      repository: helmrepo
-      chart: helmchart
-      version: helmversion
+#   - name: art
+#     type: BuildInfo
+#     configuration:
+#       sourceArtifactory: artifactory
+#       buildName: "1"
+#       buildNumber: 1
+#   - name: docker
+#     type: Image
+#     configuration:
+#       registry: docker
+#       sourceRepository: asd/asd
+#       imageName: someImageName
+#       imageTag: someImageTag
+#       autoPull: false
+#   - name: releaseBundle
+#     type: releaseBundle
+#     configuration:
+#       sourceDistribution: releaseBundle
+#       name: bundleName
+#       version: bundleVersion
+#   - name: HelmChart
+#     type: HelmChart
+#     configuration:
+#       sourceArtifactory: artifactory
+#       repository: helmrepo
+#       chart: helmchart
+#       version: helmversion
 pipelines: 
   - name: state_test_git
     steps:
@@ -39,10 +39,10 @@ pipelines:
         configuration:
           inputResources:
             - name: git
-            - name: art
-            - name: docker
-            - name: releaseBundle
-            - name: HelmChart
+#             - name: art
+#             - name: docker
+#             - name: releaseBundle
+#             - name: HelmChart
         execution:
           onExecute:
             - pushd $res_git_resourcePath
@@ -57,3 +57,4 @@ pipelines:
         execution:
           onExecute:
             - printenv
+

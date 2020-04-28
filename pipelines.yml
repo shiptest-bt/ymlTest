@@ -48,6 +48,77 @@ pipelines:
             - pushd $res_git_resourcePath
             - sudo chmod +x echoTest.sh
             - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
+            - ./echoTest.sh
+            - sleep 2
       
       - name: run_file_restore
         type: Bash

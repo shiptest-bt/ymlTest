@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: gitResource
-      path: shpitest-bt/ymlTest
+      path: shiptest-bt/ymlTest
 #   - name: art
 #     type: BuildInfo
 #     configuration:
@@ -49,7 +49,7 @@ pipelines:
             - sudo chmod +x echoTest.sh
             - ./echoTest.sh
             - sleep 2
-            - echo 'https://github.com/shpitest-bt/ymlTest/edit/master/pipelines.yml'
+            - echo 'https://github.com/shiptest-bt/ymlTest/edit/master/pipelines.yml'
       
       - name: run_file_restore
         type: Bash

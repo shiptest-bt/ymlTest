@@ -54,8 +54,6 @@ pipelines:
       - name: run_file_restore
         type: Bash
         configuration:
-          inputSteps:
-            - name: testReport_u18
           inputResources:
             - name: git
         execution:

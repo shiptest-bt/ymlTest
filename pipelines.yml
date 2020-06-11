@@ -54,8 +54,8 @@ pipelines:
       - name: run_file_restore
         type: Bash
         configuration:
-          inputResources:
-            - name: git
+          inputSteps:
+            - name: testReport_u18
         execution:
           onExecute:
             - printenv
@@ -68,8 +68,6 @@ pipelines:
         configuration:
           affinityGroup: trigger
           priority: 0
-          inputResources:
-            - name: git
         execution:
           onExecute:
             - sleep 60
@@ -77,8 +75,6 @@ pipelines:
       - name: trigger_2
         type: Bash
         configuration:
-          inputResources:
-            - name: git
           inputSteps:
             - name: trigger_1
         execution:
@@ -97,8 +93,6 @@ pipelines:
       - name: trigger_4
         type: Bash
         configuration:
-          inputResources:
-            - name: git
           inputSteps:
             - name: trigger_3
         execution:

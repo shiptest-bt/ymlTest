@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: gitResource
-      path: ChaitanyaVootla/ymlTest
+      path: shiptest-bt/ymlTest
 pipelines: 
   - name: state_test_git
     steps:

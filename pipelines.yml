@@ -4,6 +4,7 @@ resources:
     configuration:
       gitProvider: gitResource
       path: shiptest-bt/ymlTest
+
 pipelines: 
   - name: state_test_git
     steps:

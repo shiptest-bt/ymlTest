@@ -11,6 +11,7 @@ resources:
 #     configuration:
 #       sourceArtifactory: artifactory
 #       buildName: "1"
+
 #       buildNumber: 1
 #   - name: docker
 #     type: Image

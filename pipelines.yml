@@ -4,6 +4,8 @@ resources:
     configuration:
       gitProvider: gitResource
       path: shiptest-bt/ymlTest
+      branches:
+        include: master
 #   - name: art
 #     type: BuildInfo
 #     configuration:

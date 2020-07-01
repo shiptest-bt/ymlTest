@@ -42,6 +42,7 @@ pipelines:
 #             - name: art
 #             - name: docker
 #             - name: releaseBundle
+
 #             - name: HelmChart
         execution:
           onExecute:
